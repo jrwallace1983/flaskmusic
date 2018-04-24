@@ -1,0 +1,39 @@
+body{
+	padding:0;
+	margin:0;
+	overflow:auto;
+}
+.container{
+  height:;
+  width:;
+  margin:;
+  overflow:;
+}
+
+h1{color:white;
+}
+
+.margin-zero{margin:0px;
+}
+.artist-container{height:200px; width:;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float:;
+    padding:;
+    margin-top:1%;
+}
+.artist-container img{height: 100%; width: 100%;
+}
+.artist-logo{}
+.artist-logo:hover{opacity:.5;}
+
+.container-background{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;"
+    }
+
+.row{margin:;}
+p.highlight{background-color:yellow;
+}

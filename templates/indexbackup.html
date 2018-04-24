@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <h1>List of Artist</h1>
+            {% for artist in artist %}
+        <a href= {{ artist.youtube }}> <h1>{{ artist.name }}</h1> </a>
+                <a href="{{ url_for('detail', artist_id=artist.id) }}">
+                    <img class="artist-logo" src="{{ artist.logo }}"></a>
+            {% endfor %}
+
+</div>
+
+{% endblock %}

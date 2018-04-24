@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <h1>List of Artist</h1>
+    {% if artist %}
+    <div class="row" style="margin-left:0px;">
+            {% for artist in artist %}
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 artist-container">
+                <a href="{{ url_for('detail', artist_id=artist.id) }}">
+                    <img class="artist-logo" src="{{ artist.logo }}"></a></div>
+            {% endfor %}
+    {% else %}
+        <p>No artist are available.</p>
+</div>
+    {% endif %}
+</div>
+{% endblock %}

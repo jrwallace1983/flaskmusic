@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+<div class="jumbotron">
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{ artist.youtube }}">
+</iframe>
+    </div>
+</div>
+<div class="container-fluid">
+
+    <div class="row">
+            {% for album in album %}
+        <div class="col-sm-3">
+            <div class="dropdown">
+            <a class="dropdown-toggle"type="button" data-toggle="dropdown">
+                <h3>{{ album.name }}</h3></a>
+                <h5>Released {{ album.release_year }}</h5>
+            <ul class="dropdown-menu">
+                <!--li><a href=" url 'music:songs' album.slug "--><h4>Album Tracks</h4></a></li>
+                <li>test2</li>
+            </ul>
+                </div>
+            <img src="{{ album.cover }}" style="width:100%; height:100%">
+
+</div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock %}
