@@ -21,11 +21,18 @@
                 <li>test2</li>
             </ul>
                 </div>
-            <img src="{{ album.cover }}" style="width:100%; height:100%">
+            <img id="{{ album.id }}" onclick="$.fn.albumfunction('iframe', '{{ album.youtube }}');" src="{{ album.cover }}" style="width:100%; height:100%">
 
 </div>
         {% endfor %}
     </div>
 </div>
 </div>
+<script>
+$(document).ready(function(){
+
+$.fn.albumfunction = function(a, b) {
+      $(a).attr('src', b)};
+});
+</script>
 {% endblock %}
